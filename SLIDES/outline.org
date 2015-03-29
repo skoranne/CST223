@@ -1,0 +1,40 @@
+#+TITLE:     Principles of Programming Languages
+#+AUTHOR:    Sandeep Koranne
+#+EMAIL:     sandeep_koranne@mentor.com
+#+DATE:      27 March 2015
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+LATEX_HEADER: \usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+
+
+#+BEAMER_FRAME_LEVEL: 2
+
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+
+* Introduction
+** A simple slide
+This slide consists of some text with a number of bullet points:
+
+- the first, very @important@, point!
+- the previous point shows the use of the special markup which
+  translates to the Beamer specific /alert/ command for highlighting
+  text
+* Quadratic Equations
+** Basic form
+This is the equation $x=\frac{a}{b}$
+
+* Lisp code verbatim
+** Example code                                                   :B_example:
+   :PROPERTIES:
+   :BEAMER_env: example
+   :END:
+   This is an example
+   (defun fac(n) (+ n 2))
+
+* C++ Code Example
+** Fibonacci Numbers
+\lstinputlisting[language=c++]{fibo.cpp}
+(END) 
