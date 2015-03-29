@@ -36,5 +36,5 @@ This is the equation $x=\frac{a}{b}$
 
 * C++ Code Example
 ** Fibonacci Numbers
-\lstinputlisting[language=c++]{fibo.cpp}
+\lstinputlisting[language=c++]{../EXAMPLE_CODE/fibo.cpp}
 (END) 
