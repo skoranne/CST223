@@ -1,0 +1,109 @@
+% Created 2015-03-29 Sun 16:03
+\documentclass[bigger]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+\mode<beamer>{\usetheme{Madrid}}
+\usetheme{default}
+\author{Sandeep Koranne}
+\date{27 March 2015}
+\title{Concepts of Programming Languages}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.4.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\begin{frame}[label=sec-1]{Instructor Background}
+\begin{itemize}
+\item Chief Scientist at Mentor Graphics
+\item Research background in algorithms, data structures, parallel programming, compiler optimization and graph theory
+\item Programming background in Common Lisp, Fortran, C, C++, Python, Erlang, etc
+\end{itemize}
+
+\begin{block}{Practical Computing on the Cell Broadband Engine}
+\includegraphics[width=.9\linewidth]{../../PICTURES/pcci_book.png}
+\end{block}
+\begin{block}{Handbook of Open Source Tools}
+\includegraphics[width=.9\linewidth]{../../PICTURES/hbook_oss.png}
+\end{block}
+
+\begin{block}{Common Lisp}
+\includegraphics[width=.9\linewidth]{../../PICTURES/soc_time.jpg}
+\end{block}
+\begin{block}{OpenGL + Motif}
+\includegraphics[width=.9\linewidth]{../../PICTURES/mips_8_crop.png}
+\end{block}
+\begin{block}{3D Programming}
+\includegraphics[width=.9\linewidth]{../../PICTURES/gl3d.jpg}
+\end{block}
+\begin{block}{C++ Discrete Geometry}
+\includegraphics[width=.9\linewidth]{../../PICTURES/4cube.jpg}
+\end{block}
+\begin{block}{Computational Geometry}
+\includegraphics[width=.9\linewidth]{../../PICTURES/drc.jpg}
+\end{block}
+\begin{block}{Algorithms}
+\includegraphics[width=.9\linewidth]{../../PICTURES/stiener_tree.jpg}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-2]{Course Outline}
+\begin{block}{Motivation}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label=sec-3]{Introduction}
+\begin{block}{A simple slide}
+This slide consists of some text with a number of bullet points:
+
+\begin{itemize}
+\item the first, very @important@, point!
+\item the previous point shows the use of the special markup which
+translates to the Beamer specific \emph{alert} command for highlighting
+text
+\end{itemize}
+\end{block}
+\end{frame}
+\begin{frame}[label=sec-4]{Quadratic Equations}
+\begin{block}{Basic form}
+This is the equation $x=\frac{a}{b}$
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-5]{Lisp code verbatim}
+\begin{example}[Example code]
+This is an example
+(defun fac(n) (+ n 2))
+\end{example}
+\end{frame}
+
+\begin{frame}[label=sec-6]{C++ Code Example}
+\begin{block}{Fibonacci Numbers}
+\lstinputlisting[language=c++]{../EXAMPLE_CODE/fibo.cpp}
+(END) 
+\end{block}
+\end{frame}
+% Emacs 24.4.1 (Org mode 8.2.10)
+\end{document}

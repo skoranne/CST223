@@ -1,0 +1,52 @@
+% Created 2015-03-31 Tue 17:55
+\documentclass[bigger]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+\mode<beamer>{\usetheme{Madrid}}
+\usetheme{default}
+\author{Sandeep Koranne}
+\date{\today}
+\title{Concepts of Programming Languages}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.4.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[label=sec-1]{Write the 'gcc' equivalent programs for the Figure 1.3 of the textbook}
+\begin{itemize}
+\item Example: pre-processor is 'cpp'
+\item What is the compiler command
+\item What is the assembler command ?
+\item What is the linker command ?
+\item Hint: use the -wrapper command line option to gcc
+\item Hint: use man gcc to read GCC documentation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-2]{Answer Chapter 1 Review Question 8, 9, 15 of the Sebesta book (10th ed)}
+\begin{itemize}
+\item 8 operator overloading
+\item 9 example of lack of orthogonality in C
+\item 15 what is aliasing
+\end{itemize}
+\end{frame}
+% Emacs 24.4.1 (Org mode 8.2.10)
+\end{document}

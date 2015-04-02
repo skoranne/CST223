@@ -1,0 +1,111 @@
+% Created 2015-04-01 Wed 20:18
+\documentclass[bigger]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+\mode<beamer>{\usetheme{Madrid}}
+\usetheme{default}
+\author{Sandeep Koranne}
+\date{\today}
+\title{Taxonomy of Programming Languages}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.4.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[label=sec-1]{Motivation}
+\pause
+\begin{block}{Critical view of language features}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-2]{Classification of Programming Languages}
+\begin{block}{Style}
+\begin{itemize}[<+->]
+\item Imperative (Procedural)
+\item Functional
+\item Logic
+\item Object Oriented
+\item Declarative
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-3]{Evolution of Programming Languages}
+\begin{itemize}[<+->]
+\item The original (circa 1955) concern was efficiency
+\item consider
+\end{itemize}
+\begin{eqnarray}
+y & = & 2*(y+5y^2) + \sin(y)\cos(y) \\
+dx & = & \frac{x-y}{step}\\
+dy & = & \sin(y)dx
+\end{eqnarray} 
+\begin{itemize}
+\item It was widely believed that no computer program would ever be able to optimize these sort of programs
+\item Today, writing such code even in Fortran and C++ is considered low level
+\item Only in the most critical cases is assembly language programming used.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-4]{Language features and their contrast}
+\begin{itemize}[<+->]
+\item There is no such thing as a \emph{perfect} language
+\item However, certain language features have become idiomatic
+\item Such as the use of abstract data types in C++ for templates
+\item Use of asynchronous messaging in Erlang
+\item The use of map-reduce (from Common Lisp)
+\item Array and slice operations from Fortran
+\item List comprehensions from Common Lisp
+\item Garbage collection (from Lisp and then Java)
+\item Use of packages (Python)
+\item Strength of awk, sed, grep, bash, Tcl,
+\item Use of SQL for declarative database programming
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-5]{The goal of this course is to give an introduction to the above}
+\end{frame}
+
+\begin{frame}[label=sec-6]{Outline of this course}
+\begin{center}
+\begin{tabular}{llll}
+Lecture & Content & Lab & HW\\
+4/2 & Chap 1-2 & C language & HW1\\
+4/9 & Chap 3-4 & C language & HW2\\
+4/16 & Chap 5-6 & Fortran & HW3\\
+4/23 & Chap 7-8 & Common Lisp & HW4\\
+4/30 & Chap 9-10 & C++ & HW5\\
+5/7 & Chap 11 & C++ & HW6\\
+5/14 & Chap 12 & C++ & HW7\\
+5/16 & Chap 13 & Erlang & HW8\\
+5/21 & No class & - & -\\
+5/28 & Chap 14 & Python & HW9\\
+6/4 & Chap 15 & Various & HW10\\
+6/11 & Chap 16 & Various & Final\\
+ &  &  & \\
+\end{tabular}
+\end{center}
+
+\begin{block}{Each class may have a in-class quiz}
+\end{block}
+\end{frame}
+% Emacs 24.4.1 (Org mode 8.2.10)
+\end{document}
