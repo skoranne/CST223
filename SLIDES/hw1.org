@@ -1,0 +1,31 @@
+#+TITLE:     Homework 1 (Due 04/09/2015)
+#+AUTHOR:    Sandeep Koranne
+#+EMAIL:     sandeep_koranne@mentor.com
+#+DATE:      \today
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+LATEX_HEADER: \usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+#+OPTIONS: toc:nil
+
+#+BEAMER_FRAME_LEVEL: 2
+
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+
+* Write the 'gcc' equivalent programs for the Figure 1.3 of the textbook
+- Example: pre-processor is 'cpp'
+- What is the compiler command ?
+- What is the assembler command ?
+- What is the linker command ?
+- Hint: use the -wrapper command line option to gcc
+- Hint: use man gcc to read GCC documentation
+
+* Answer Chapter 1 Review Question 8, 9, 15 of the Sebesta book (10th ed)
+- 8 operator overloading
+- 9 example of lack of orthogonality in C
+- 15 what is aliasing
+
+* According to you, which important feature is missing from C? Justify your choice of feature

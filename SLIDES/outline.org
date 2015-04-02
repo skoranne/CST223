@@ -1,4 +1,4 @@
-#+TITLE:     Principles of Programming Languages
+#+TITLE:     Concepts of Programming Languages
 #+AUTHOR:    Sandeep Koranne
 #+EMAIL:     sandeep_koranne@mentor.com
 #+DATE:      27 March 2015
@@ -13,6 +13,42 @@
 
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
 #+latex_header: \mode<beamer>{\usetheme{Madrid}}
+
+* Instructor Background
+- Chief Scientist at Mentor Graphics
+- Research background in algorithms, data structures, parallel programming, compiler optimization and graph theory
+- Programming background in Common Lisp, Fortran, C, C++, Python, Erlang, etc
+
+* Previous Research						      :BMCOL:
+  :PROPERTIES:
+  :BEAMER_col: 0.5
+  :END:
+[[file:../../PICTURES/pcci_book.png]]
+  :PROPERTIES:
+  :BEAMER_col: 0.5
+  :END:
+file:../../PICTURES/hbook_oss.png
+
+* Programming Experience
+** Common Lisp, OpenGL						      :BMCOL:
+   :PROPERTIES:
+   :BEAMER_col: 0.3
+   :END:
+[[file:../../PICTURES/soc_time.jpg]]
+file:../../PICTURES/mips_8_crop.png
+[[file:../../PICTURES/gl3d.jpg]]
+** C++ Discrete Geometry :BMCOL:
+   :PROPERTIES:
+   :BEAMER_col: 0.3
+   :END:
+file:../../PICTURES/4cube.jpg
+[[file:../../PICTURES/drc.jpg]]
+[[file:../../PICTURES/stiener_tree.jpg]]
+
+* Course Outline
+** Motivation
+
+
 
 * Introduction
 ** A simple slide
