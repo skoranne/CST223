@@ -1,0 +1,181 @@
+#+TITLE:     Methods of Describing Syntax
+#+AUTHOR:    Sandeep Koranne
+#+EMAIL:     koranne.sandeep@oit.edu
+#+DATE:      \today
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+# #+latex_class_options: [handout]
+
+#+LATEX_HEADER: \usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+#+OPTIONS: toc:nil
+
+#+BEAMER_FRAME_LEVEL: 2
+
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+
+* Introduction
+#+ATTR_BEAMER: :overlay +-
+- Programming Languages  are designed for computers to understand
+- Language Recognizers
+- Language Generators
+
+* Problem of defining syntax
+#+ATTR_BEAMER: :overlay +-
+- /Sentences/ (eg ``fox jumped over the box'')
+- index = 2*count + 17;
+- Lexemes     index, =, 2, *, count, +, 17
+- Tokens are category of lexemes
+
+* Sentence is index = 2*count + 17;
+| Lexemes | Tokens      |
+| index   | identifier  |
+| =       | equal-sign  |
+| 2       | int-literal |
+| *       | mult-op     |
+| count   | identifier  |
+| +       | plus-op     |
+| 17      | int-literal |
+| ;       | semicolon   |
+
+
+* Binary number
+#+ATTR_BEAMER: :overlay +-
+- Number = [0|1]+
+- [] denotes a set
+- | denotes a choice
+- + denotes /Kleene/-closure, 1 or more repetitions
+- * denotes /Kleene/-closure, 0 or more repetitions
+* Backnus-Naur Form
+- Left-hand side and right-hand side
+<assign> \rightarrow <var> = <expr>
+- Terminals and non-terminals
+- Grammar
+- Regular languages
+- Context free grammars
+
+* Grammars and Derivations
+** Example
+Address := Street State Zip \\
+Street  := House-Number Lane \\
+House-Number := [0-1]+ \\
+Lane := [a-zA-Z]+ \\
+State   := {id} \\
+Zip     := [0-1]+ \\
+
+#+BEAMER: \pause
+
+** Note that the right-hand side of House-Number and Zip is same
+Should be replaced by a production rule
+
+number := [0-1]+ \\
+House-Number := number \\
+Zip := number 
+
+* Example 3.2 grammar for single assignment statements
+<assign> \rightarrow <id> = <expr> \\
+<id> \rightarrow A | B |C \\
+<expr> \rightarrow <id> + <expr> \\
+       $|$ <id> * <expr> \\ 
+       $|$ ( <expr> ) \\      
+       $|$ <id>   \\          
+
+* Parse Trees
+
+* Ambiguity of parsing
+** Example
+7+8*8-9+5
+- This is called operator precedence problem
+- Associativity of operators
+
+#+BEAMER: \pause
+if( a < 0 ) x=2; if( b < 0 ) y=2; else z=3;
+
+* Attribute Grammars
+** Attribute grammar is an extension to context free grammar
+
+* Semantic Analysis
+#+ATTR_BEAMER: :overlay +-
+- Static semantics
+- With each grammar symbol associate a set of attributes
+** Example
+if( x > 0 ) then \\
+begin \\
+    y = 3; \\
+end \\
+
+- Static semantics can be /propagated/
+
+* Operational semantics
+Desribe the meaning of a statement by specifying the effects of execution
+
+** Easiest to define in terms of intermediate language representation
+
+* Advantages of IR 
+#+ATTR_BEAMER: :overlay +-
+- Language front-end can be modified (procedural design)
+- Optimizations can be done on IR
+- These optimizations can be shared across many languages
+- IR can be directly executed on chip
+- Chip can be designed for IR (eg. Lisp machine)
+
+* Denotational Semantics
+Mathematical formulation. Define a map between /syntactic/ domain to /semantic/ domain
+** Defined in terms of state of a program
+
+* Pre-conditions and Post-condition invariants
+#+ATTR_BEAMER: :overlay +-
+- Assertions
+- Axioms,  /antecedent/ and /consequent/
+- Weakest pre-condition
+- Strongest post-condition
+- Inference rules
+- Sequences
+
+* Pre-condition
+** Example
+if ( a < b ) c = 3;
+
+If { c = 3 } is TRUE, then can we assert a < b ?
+#+BEAMER: \pause
+NO, because /c/ could have been 3 anyway, so the weakest pre-condition is either (a<b) OR (c=3)
+
+* Post-condition
+if( ( a < 2 ) || ( b > 3 ) ) c = 3; else c = 0;
+
+#+BEAMER: \pause
+Even without analyzing in detail we know that either c=3 or c=0
+
+
+* Lexical Analysis
+- Finite automata
+- /lex/
+
+* Parsing Analysis
+- Recursive parsing (top-down)
+- LL(1)
+- LALR(1)
+- Shift reduce parsing
+- Parse table
+- /yacc/
+
+* Lab discussion
+
+* Homework2
+- These are questions 7a, 13, 22c and 24a
+- Write the parse tree and leftmost derivation of A = A * (B+C)
+- Write a grammar for the language consisting of strings that have /n/ copies of letter /a/ followed by /n/ copies of /b/, where /n>0/. Eg aaabbb, aabb are valid, while abb, aab are not valid
+- Write EBNF for C /switch/ statement
+- a = 2*b+1; b = a-3 {b < 0}
+
+* Part of Homework 2 : Lab preparation for Lab 3 (Lab on 04/16/2015)
+- Instead of Fortran we will start with Common Lisp and Scheme
+- http://gigamonkeys.com/book/
+- Lispworks Personal Edition or CLISP for windows
+- What is the output of the following expression
+- (mapcar #'(lambda(x) (+ x 2)) '(1 2 3 4))
+
+

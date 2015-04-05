@@ -1,0 +1,25 @@
+#+TITLE:     Homework2 Due 04/16/2015
+#+AUTHOR:    Sandeep Koranne
+#+EMAIL:     koranne.sandeep@oit.edu
+#+DATE:      \today
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+LATEX_HEADER: \usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+#+OPTIONS: toc:nil
+
+#+BEAMER_FRAME_LEVEL: 2
+
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+
+* Homework2
+- These are questions 7a, 13, 22c and 24a
+- Write the parse tree and leftmost derivation of A = A * (B+C)
+- Write a grammar for the language consisting of strings that have /n/ copies of letter /a/ followed by /n/ copies of /b/, where /n>0/. Eg aaabbb, aabb are valid, while abb, aab are not valid
+- Write EBNF for C /switch/ statement
+- a = 2*b+1; b = a-3 {b < 0}
+
+

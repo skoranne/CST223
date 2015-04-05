@@ -1,0 +1,36 @@
+#+TITLE:     Concepts of Programming Language
+#+AUTHOR:    Sandeep Koranne
+#+EMAIL:     koranne.sandeep@oit.edu
+#+DATE:      \today
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+LATEX_HEADER: \usepackage{listings} \lstset{  language={C++},  basicstyle=\ttfamily\tiny}
+#+OPTIONS: toc:nil
+
+#+BEAMER_FRAME_LEVEL: 2
+
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+
+* Syllabus
+| Lecture | Content   | Lab         | HW    |
+| 4/2     | Chap 1-2  | C language  | HW1   |
+| 4/9     | Chap 3-4  | C language  | HW2   |
+| 4/16    | Chap 5-6  | Fortran     | HW3   |
+| 4/23    | Chap 7-8  | Common Lisp | HW4   |
+| 4/30    | Chap 9-10 | C++         | HW5   |
+| 5/7     | Chap 11   | C++         | HW6   |
+| 5/14    | Chap 12   | C++         | HW7   |
+| 5/16    | Chap 13   | Erlang      | HW8   |
+| 5/21    | No class  | -           | -     |
+| 5/28    | Chap 14   | Python      | HW9   |
+| 6/4     | Chap 15   | Various     | HW10  |
+| 6/11    | Chap 16   | Various     | Final |
+|         |           |             |       |
+
+- We are using the book /Concepts of Programming Languages/ by Sebesta, 10th ed
+
+
