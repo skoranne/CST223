@@ -1,0 +1,11 @@
+CC	= gcc
+CFLAGS += -Wall -ggdb
+
+lab1_uf:	union_find.cpp
+	$(CC) $(CFLAGS) -DUNION_FIND_PROJECT -o lab1_uf union_find.cpp
+lab1_bst:	union_find.cpp
+	$(CC) $(CFLAGS) -DBINARY_TREE_PROJECT -o lab1_bst union_find.cpp
+lab1_mst:	union_find.cpp
+	$(CC) $(CFLAGS) -DMST_PROJECT -o lab1_mst union_find.cpp
+
+all:	lab1_uf lab1_bst lab1_mst

@@ -1,0 +1,17 @@
+  0 Fibonacci number =     0   0! =          1
+  1 Fibonacci number =     1   1! =          1
+  2 Fibonacci number =     1   2! =          2
+  3 Fibonacci number =     2   3! =          6
+  4 Fibonacci number =     3   4! =         24
+  5 Fibonacci number =     5   5! =        120
+  6 Fibonacci number =     8   6! =        720
+  7 Fibonacci number =    13   7! =       5040
+  8 Fibonacci number =    21   8! =      40320
+  9 Fibonacci number =    34   9! =     362880
+ 10 Fibonacci number =    55  10! =    3628800
+ 11 Fibonacci number =    89  11! =   39916800
+ 12 Fibonacci number =   144  12! =  479001600
+ 13 Fibonacci number =   233  13! = 1932053504
+ 14 Fibonacci number =   377  14! = 1278945280
+ 15 Fibonacci number =   610  15! = 2004310016
+ 16 Fibonacci number =   987  16! = 2004189184
