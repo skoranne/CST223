@@ -1,0 +1,91 @@
+; Loading #P"/home/skoranne/.cmucl-init".
+;; Loading #P"/home/skoranne/quicklisp/setup.lisp".
+;;; Loading #P"/user/skoranne/SFW/lib/cmucl/lib/contrib/asdf/asdf.sse2f".
+; Loading #P"/scratch1/skoranne/Programs/Lisp/tictactoe.lisp".
+
+Welcome to Tic-Tac-Toe by Sandeep Koranne
+
+2 = (0 0)
+3 = (0 1)
+5 = (0 2)
+7 = (1 0)
+11 = (1 1)
+13 = (1 2)
+17 = (2 0)
+19 = (2 1)
+23 = (2 2)
+Winning combinations calculated to be (935 506 1495 627 238 7429 1001 30)
+
+Game board
+
++---+---+---+
+|   |   |   |
++---+---+---+
+|   |   |   |
++---+---+---+
+|   |   |   |
++---+---+---+
+Player-A board
+
++---+---+---+
+| 0 | 0 | 0 |
++---+---+---+
+| 0 | 0 | 0 |
++---+---+---+
+| 0 | 0 | 0 |
++---+---+---+
+Player-B board
+
++---+---+---+
+| 0 | 0 | 0 |
++---+---+---+
+| 0 | 0 | 0 |
++---+---+---+
+| 0 | 0 | 0 |
++---+---+---+
+Evaluation board
+
++---+---+---+
+| 2 | 3 | 5 |
++---+---+---+
+| 7 |11 |13 |
++---+---+---+
+|17 |19 |23 |
++---+---+---+
+Player A, enter move: 
++---+---+---+
+| A |   |   |
++---+---+---+
+| B |   |   |
++---+---+---+
+|   |   |   |
++---+---+---+
+Player A, enter move: 
++---+---+---+
+| A | A | B |
++---+---+---+
+| B |   |   |
++---+---+---+
+|   |   |   |
++---+---+---+
+Player A, enter move: 
++---+---+---+
+| A | A | B |
++---+---+---+
+| B | B |   |
++---+---+---+
+| A |   |   |
++---+---+---+
+Player A, enter move: 
++---+---+---+
+| A | A | B |
++---+---+---+
+| B | B | B |
++---+---+---+
+| A | A |   |
++---+---+---+
+
+ CONGRATULATION TO PLAYER-B 
+
+
+Bye
